@@ -1,0 +1,12 @@
+release/admin_page.o
+release/check.o
+release/instructor_page.o
+release/main.o
+release/mainwindow.o
+release/mysql.o
+release/student_page.o
+release/qrc_img.o
+release/moc_admin_page.o
+release/moc_instructor_page.o
+release/moc_mainwindow.o
+release/moc_student_page.o

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/new/picture">
+        <file>picture/iconfinder_7_avatar_2754582.png</file>
+        <file>picture/iconfinder_10_avatar_2754575.png</file>
+        <file>picture/iconfinder_12_avatar_2754577.png</file>
+        <file>picture/045 Loon Crest.png</file>
+        <file>picture/100 Vicious Stance.png</file>
+        <file>picture/pngguru.com.png</file>
+        <file>picture/pngguru.com (1).png</file>
+        <file>picture/pngguru.com (3).png</file>
+        <file>picture/pngguru.com (4).png</file>
+        <file>picture/iconfinder_8_330406.png</file>
+        <file>picture/iconfinder_key_1055040.png</file>
+    </qresource>
+</RCC>

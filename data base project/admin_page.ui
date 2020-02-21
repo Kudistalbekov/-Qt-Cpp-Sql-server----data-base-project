@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>admin</class>
+ <widget class="QMainWindow" name="admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1393</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="new_course">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ADD NEW COURSE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="new_teacher">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ADD NEW TEACHER</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="new_student">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ADD NEW STUDENT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="teaching">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Assign courses to instructors </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="advisor">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>510</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Assign instructors to students </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="photo">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>141</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="db_list">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>210</y>
+      <width>571</width>
+      <height>411</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>630</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CLEAR</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>40</y>
+      <width>531</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="course">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QLabel" name="course_course_id">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>COURSE_ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="course_title">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TITLE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="course_dept_name">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DEP. NAME</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="course_credit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CREDIT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="c_course">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="c_title">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>200</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="c_dept_name">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="c_credit">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>320</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="course_add">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>380</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>30</y>
+        <width>481</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NEW COURSE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="teacher">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>90</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NEW TEACHER</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="i_id">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>180</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="i_name">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>240</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="instructor_id">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="i_dept_name">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>300</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="i_salary">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>360</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="instructor_name">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NAME</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="i_add">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>420</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="instructor_salary">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SALARY</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="instructor_dept_name">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DEP. NAME</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="inst_pic">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="student">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>90</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NEW STUDENT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="s_dept_name">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>300</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="student_id">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="s_tot_cred">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>360</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="s_name">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>240</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="s_id">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>180</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="student_name">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NAME</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="student_dept_name">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DEP. NAME</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="student_salary">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TOT_CRED</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="s_add">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>420</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="student_pic">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="inst_course">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>201</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> Assign courses to instructors </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="teaches_semester">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>300</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="teahes_year">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>360</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="t_add">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>420</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>COURSE_ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="teaches_course">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="teaches_id">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="instructor_dept_name_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SEMESTER</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="advisor_year">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>year</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="teaches_sec_id">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>240</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="advisor_course_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SECTION NUMBER</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="instr_student">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>180</y>
+        <width>231</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Assign instructors to students </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>310</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>INSTRUCTOR ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>310</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>STUDENT ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="advisor_id">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>360</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="student_id_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>360</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+  border: 2px solid #ccc;
+  color:black;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="assign">
+      <property name="geometry">
+       <rect>
+        <x>334</x>
+        <y>420</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ASSIGN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="advisor_pic">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="student_pic2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>470</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SECTION</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_db_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>571</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <widget class="QListWidget" name="db_list_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>571</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="check_str">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>610</y>
+      <width>451</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1393</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
